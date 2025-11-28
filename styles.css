@@ -30,7 +30,7 @@ body{
   background:#ffffffcc;
   backdrop-filter:blur(10px);
   padding:16px 0;
-  position:fixed;   /* FIX: sticky → fixed */
+  position:fixed;  
   top:10;
   left:0;
   width:100%;
@@ -38,14 +38,14 @@ body{
   box-shadow:var(--shadow);
 }
 
-.header-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
 
 .brand-wrap{display:flex;align-items:center;gap:12px}
 
 /* FIXED Logo Sizing */
 .logo{
-  width:66px;   
-  height:66px;
+  width:70px;   
+  height:70px;
   object-fit:fill;
   border-radius:10px;
   background:white;
