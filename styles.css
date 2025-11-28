@@ -23,14 +23,14 @@ body{
   padding-top: 95px;   /* matches header height so content does NOT slide under header */
 }
 
-.container{max-width:var(--maxw);margin:0 auto;padding:30px}
+.container{max-width:var(--maxw);margin:0 auto;padding:20px}
 
 /* HEADER */
 .site-header{
   background:#ffffffcc;
   backdrop-filter:blur(10px);
   padding:16px 0;
-  position:fixed;  
+  position:fixed;   
   top:0;
   left:0;
   width:100%;
@@ -38,15 +38,15 @@ body{
   box-shadow:var(--shadow);
 }
 
-.header-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
 
 .brand-wrap{display:flex;align-items:center;gap:12px}
 
 /* FIXED Logo Sizing */
 .logo{
-  width:70px;   
-  height:70px;
-  object-fit:fill;
+  width:68px;   /* smaller */
+  height:68px;
+  object-fit:contain;
   border-radius:10px;
   background:white;
   box-shadow:var(--shadow);
