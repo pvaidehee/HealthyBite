@@ -1,70 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>HealthyBite — Recipes</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyBite Recipes</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
+
 <header class="site-header">
   <div class="container header-row">
     <div class="brand-wrap">
-      <img src="greylogo.jpg" alt="HealthyBite logo" class="logo" />
+      <img src="assets/images/logo.png" class="logo" alt="HealthyBite Logo">
       <div>
-        <h1 class="brand">HealthyBite</h1>
-        <p class="tag">Recipe Library</p>
+        <div class="brand">HealthyBite</div>
+        <div class="tag">Fresh • Simple • Smart</div>
       </div>
     </div>
-
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="recipes.html">Recipes</a>
+      <a href="recipes.html" class="active">Recipes</a>
       <a href="mealplanner.html">Meal Planner</a>
       <a href="bmi.html">BMI Calculator</a>
       <a href="contact.html">Contact</a>
     </nav>
-
-    <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    <button class="nav-toggle">☰</button>
   </div>
 </header>
 
-<main class="container">
-  <h2>Recipes</h2>
-  <p>Use the search box to filter the sample recipe list.</p>
-  <input id="recipeSearch" placeholder="Search recipes (e.g. salad, chicken)" />
-  <div id="recipeList" class="card-grid"></div>
-</main>
+<div class="container page-header-space">
+  <h2 class="page-title">Healthy Recipes</h2>
+  <p class="page-sub">Discover colorful, delicious meals made with clean ingredients.</p>
 
-<footer class="site-footer"><div class="container"><small>© 2025 HealthyBite</small></div></footer>
-<script src="scripts.js"></script>
-<script>
-const RECIPES = [
-  {"id":1,"title":"Grilled Chicken Salad","calories":420,"tags":["low-carb","gluten-free"]},
-  {"id":2,"title":"Quinoa & Veggie Bowl","calories":360,"tags":["vegetarian","high-fiber"]},
-  {"id":3,"title":"Oat Pancakes","calories":290,"tags":["vegetarian","breakfast"]},
-  {"id":4,"title":"Avocado Toast","calories":250,"tags":["vegetarian","quick"]},
-  {"id":5,"title":"Baked Salmon & Greens","calories":480,"tags":["pescatarian","high-protein"]}
-];
+  <div class="recipe-grid">
 
-function renderRecipes(list){
-  const container = document.getElementById('recipeList');
-  container.innerHTML = '';
-  list.forEach(r=>{
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `<h3>${r.title}</h3><p>Calories: ${r.calories}</p><p>Tags: ${r.tags.join(', ')}</p>`;
-    container.appendChild(card);
-  });
-}
+    <!-- Recipe Card 1 -->
+    <div class="recipe-card">
+      <img src="assets/images/recipes/avocado-toast.jpg" alt="">
+      <h3>Avocado Toast Deluxe</h3>
+    </div>
 
-document.getElementById('recipeSearch').addEventListener('input', function(e){
-  const q = e.target.value.toLowerCase();
-  const filtered = RECIPES.filter(r=> r.title.toLowerCase().includes(q) || r.tags.join(' ').toLowerCase().includes(q));
-  renderRecipes(filtered);
-});
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card">
+      <img src="assets/images/recipes/chicken-bowl.jpg" alt="">
+      <h3>Protein Power Chicken Bowl</h3>
+    </div>
 
-renderRecipes(RECIPES);
-</script>
+    <!-- Recipe Card 3 -->
+    <div class="recipe-card">
+      <img src="assets/images/recipes/veggie-wrap.jpg" alt="">
+      <h3>Rainbow Veggie Wrap</h3>
+    </div>
+
+    <!-- Recipe Card 4 -->
+    <div class="recipe-card">
+      <img src="assets/images/recipes/oats.jpg" alt="">
+      <h3>Blueberry Overnight Oats</h3>
+    </div>
+
+    <!-- Recipe Card 5 -->
+    <div class="recipe-card">
+      <img src="assets/images/recipes/quinoa.jpg" alt="">
+      <h3>Lemon Quinoa Bowl</h3>
+    </div>
+
+    <!-- New Recipes -->
+    <div class="recipe-card">
+      <img src="assets/images/recipes/greek-salad.jpg" alt="">
+      <h3>Fresh Greek Salad</h3>
+    </div>
+
+    <div class="recipe-card">
+      <img src="assets/images/recipes/tacos.jpg" alt="">
+      <h3>Healthy Veggie Tacos</h3>
+    </div>
+
+    <div class="recipe-card">
+      <img src="assets/images/recipes/fruit-smoothie.jpg" alt="">
+      <h3>Berry Glow Smoothie</h3>
+    </div>
+
+    <div class="recipe-card">
+      <img src="assets/images/recipes/stirfry.jpg" alt="">
+      <h3>One-Pan Veggie Stir Fry</h3>
+    </div>
+
+    <div class="recipe-card">
+      <img src="assets/images/recipes/soup.jpg" alt="">
+      <h3>Cozy Lentil Soup</h3>
+    </div>
+
+    <div class="recipe-card">
+      <img src="assets/images/recipes/banana-bread.jpg" alt="">
+      <h3>Healthy Banana Bread</h3>
+    </div>
+
+    <div class="recipe-card">
+      <img src="assets/images/recipes/salmon.jpg" alt="">
+      <h3>Lemon Garlic Salmon</h3>
+    </div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  © 2025 HealthyBite. Clean eating made joyful.
+</footer>
+
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
