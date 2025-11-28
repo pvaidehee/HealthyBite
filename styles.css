@@ -23,7 +23,7 @@ body{
   padding-top: 95px;   /* matches header height so content does NOT slide under header */
 }
 
-.container{max-width:var(--maxw);margin-top:20px; margin:0 auto;padding:20px}
+.container{max-width:var(--maxw);padding-top:20px; margin:0 auto;padding:20px}
 
 /* HEADER */
 .site-header{
