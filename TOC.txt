@@ -1,0 +1,9 @@
+Table of Contents for final product zip
+- index.html (Home)
+- recipes.html (Recipe browsing + search)
+- mealplanner.html (Meal planner - localStorage)
+- bmi.html (BMI calculator)
+- contact.html (Contact form prototype)
+- styles.css (Site stylesheet)
+- scripts.js (Site scripts)
+- README.md (Project README)
