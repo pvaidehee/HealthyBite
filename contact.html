@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>HealthyBite — Contact</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="container"><h1 class="brand">HealthyBite</h1>
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="mealplanner.html">Meal Planner</a>
+  <a href="bmi.html">BMI Calculator</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<button class="nav-toggle" aria-label="Open navigation">☰</button>
+</div></header>
+
+<main class="container">
+  <h2>Contact</h2>
+  <p>If you have questions or feedback, email <strong>vaidehee@example.com</strong></p>
+  <form id="contactForm">
+    <label>Name: <input id="cname" required /></label>
+    <label>Email: <input id="cemail" type="email" required /></label>
+    <label>Message: <textarea id="cmsg" required></textarea></label>
+    <button type="submit">Send</button>
+  </form>
+  <div id="contactResult"></div>
+</main>
+
+<footer class="site-footer"><div class="container"><small>© 2025 HealthyBite</small></div></footer>
+<script src="scripts.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('contactResult').innerText = 'Thank you — message recorded (prototype).';
+});
+</script>
+</body>
+</html>
