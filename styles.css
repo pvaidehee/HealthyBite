@@ -26,11 +26,11 @@ body{
 .site-header{
   background:transparent;
   padding:20px 0;
-  position:relative;
+  position:static;
   top:0;
   z-index:20;
 }
-.header-row{display: flex;flex-wrap: wrap;align-items:center;justify-content:space-between;gap:12px}
+.header-row{display: flex;wrap;align-items:center;justify-content:space-between;gap:12px}
 .brand-wrap{display:flex;align-items:center;gap:12px}
 .logo{width:50px;height:50px;object-fit:contain;border-radius:10px;box-shadow:var(--shadow);background:white;padding:20px}
 .brand{font-size:20px;color:var(--text);margin-bottom:2px}
