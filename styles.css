@@ -4,7 +4,7 @@
   --bg-gradient-1:#fff7f3;
   --bg-gradient-2:#f0fbf7;
   --card:#ffffff;
-  --text:#1b1b1b;
+  --text:#48dfab;
   --muted:#59606a;
   --maxw:1100px;
   --radius:14px;
@@ -20,8 +20,8 @@ body{
   line-height:1.5;
 
   /* FIXED HEADER BUMP FIX */
-  padding-top: 95px;   /* matches header height so content does NOT slide under header */
-}
+  /*padding-top: 95px;   /* matches header height so content does NOT slide under header */
+}*/
 
 .container{max-width:var(--maxw);margin:0 auto;padding:20px}
 
