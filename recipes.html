@@ -1,22 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>HealthyBite — Recipes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header"><div class="container"><h1 class="brand">HealthyBite</h1>
-<nav class="main-nav">
-  <a href="index.html">Home</a>
-  <a href="recipes.html">Recipes</a>
-  <a href="mealplanner.html">Meal Planner</a>
-  <a href="bmi.html">BMI Calculator</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<button class="nav-toggle" aria-label="Open navigation">☰</button>
-</div></header>
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand-wrap">
+      <img src="greylogo.jpg" alt="HealthyBite logo" class="logo" />
+      <div>
+        <h1 class="brand">HealthyBite</h1>
+        <p class="tag">Recipe Library</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="mealplanner.html">Meal Planner</a>
+      <a href="bmi.html">BMI Calculator</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Open navigation">☰</button>
+  </div>
+</header>
 
 <main class="container">
   <h2>Recipes</h2>
@@ -28,7 +39,6 @@
 <footer class="site-footer"><div class="container"><small>© 2025 HealthyBite</small></div></footer>
 <script src="scripts.js"></script>
 <script>
-/* sample recipe data */
 const RECIPES = [
   {"id":1,"title":"Grilled Chicken Salad","calories":420,"tags":["low-carb","gluten-free"]},
   {"id":2,"title":"Quinoa & Veggie Bowl","calories":360,"tags":["vegetarian","high-fiber"]},
@@ -54,7 +64,6 @@ document.getElementById('recipeSearch').addEventListener('input', function(e){
   renderRecipes(filtered);
 });
 
-// initial render
 renderRecipes(RECIPES);
 </script>
 </body>
