@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>HealthyBite — Meal Planner</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="container"><h1 class="brand">HealthyBite</h1>
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="mealplanner.html">Meal Planner</a>
+  <a href="bmi.html">BMI Calculator</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<button class="nav-toggle" aria-label="Open navigation">☰</button>
+</div></header>
+
+<main class="container">
+  <h2>Meal Planner</h2>
+  <p>Create a simple plan for the week and save it locally.</p>
+  <label>Day:
+    <select id="daySelect">
+      <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+      <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
+    </select>
+  </label>
+  <input id="mealInput" placeholder="Enter meal (e.g., Grilled Chicken Salad)" />
+  <button id="addMeal">Add Meal</button>
+  <button id="savePlan">Save Plan</button>
+
+  <h3>Weekly Plan</h3>
+  <ul id="planList" class="plan-list"></ul>
+</main>
+
+<footer class="site-footer"><div class="container"><small>© 2025 HealthyBite</small></div></footer>
+<script src="scripts.js"></script>
+<script>
+const planKey = 'healthybite_plan';
+let plan = JSON.parse(localStorage.getItem(planKey) || '{}');
+
+function renderPlan(){
+  const list = document.getElementById('planList');
+  list.innerHTML = '';
+  ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'].forEach(d => {
+    const li = document.createElement('li');
+    li.innerHTML = `<strong>${d}:</strong> ${plan[d] ? plan[d].join(', ') : '—'}`;
+    list.appendChild(li);
+  });
+}
+
+document.getElementById('addMeal').addEventListener('click', ()=>{
+  const day = document.getElementById('daySelect').value;
+  const meal = document.getElementById('mealInput').value.trim();
+  if(!meal){ alert('Please enter a meal.'); return; }
+  plan[day] = plan[day] || [];
+  plan[day].push(meal);
+  renderPlan();
+  document.getElementById('mealInput').value = '';
+});
+
+document.getElementById('savePlan').addEventListener('click', ()=>{
+  localStorage.setItem(planKey, JSON.stringify(plan));
+  alert('Plan saved locally (browser storage).');
+});
+
+renderPlan();
+</script>
+</body>
+</html>
