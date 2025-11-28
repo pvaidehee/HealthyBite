@@ -20,17 +20,17 @@ body{
   line-height:1.5;
 
   /* FIXED HEADER BUMP FIX */
-  /*padding-top: 95px;   /* matches header height so content does NOT slide under header */
-}*/
+  padding-top: 95px;   /* matches header height so content does NOT slide under header */
+}
 
-.container{max-width:var(--maxw);margin:0 auto;padding:20px}
+.container{max-width:var(--maxw);margin-top:20px; margin:0 auto;padding:20px}
 
 /* HEADER */
 .site-header{
   background:#ffffffcc;
   backdrop-filter:blur(10px);
   padding:16px 0;
-  position:absolute;  
+  position:fixed;   /* FIX: sticky → fixed */
   top:0;
   left:0;
   width:100%;
