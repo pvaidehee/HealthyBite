@@ -20,7 +20,7 @@ body{
   line-height:1.5;
 
   /* FIXED HEADER BUMP FIX */
-  padding-top: 45px;   /* matches header height so content does NOT slide under header */
+  padding-top: 95px;   /* matches header height so content does NOT slide under header */
 }
 
 .container{max-width:var(--maxw);margin:0 auto;padding:20px}
@@ -30,7 +30,7 @@ body{
   background:#ffffffcc;
   backdrop-filter:blur(10px);
   padding:16px 0;
-  position:absolute;   
+  position:absolute;  
   top:0;
   left:0;
   width:100%;
@@ -44,10 +44,10 @@ body{
 
 /* FIXED Logo Sizing */
 .logo{
-  width:150px;   
-  height:150px;
+  width:48px;   /* smaller */
+  height:48px;
   object-fit:contain;
-  border-radius:6px;
+  border-radius:10px;
   background:white;
   box-shadow:var(--shadow);
   padding:4px;
