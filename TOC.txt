@@ -7,3 +7,4 @@ Table of Contents for final product zip
 - styles.css (Site stylesheet)
 - scripts.js (Site scripts)
 - README.md (Project README)
+- logo.png (Your logo — add if you have one)
