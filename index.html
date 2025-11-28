@@ -4,44 +4,62 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>HealthyBite — Home</title>
+
+<!-- Google font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="site-header">
-  <div class="container">
-    <h1 class="brand">HealthyBite</h1>
-    <nav class="main-nav">
+  <div class="container header-row">
+    <div class="brand-wrap">
+      <!-- Put your logo file as logo.png in repo root or assets/images/ -->
+      <img src="greylogo.jpg" alt="HealthyBite logo" class="logo" />
+      <div>
+        <h1 class="brand">HealthyBite</h1>
+        <p class="tag">Fresh, simple meal planning</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="recipes.html">Recipes</a>
       <a href="mealplanner.html">Meal Planner</a>
       <a href="bmi.html">BMI Calculator</a>
       <a href="contact.html">Contact</a>
     </nav>
+
     <button class="nav-toggle" aria-label="Open navigation">☰</button>
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
-    <h2>Simple meal planning for healthier living</h2>
-    <p>Create meal plans, browse recipes, and track your nutrition.</p>
-    <a class="btn" href="mealplanner.html">Get Started</a>
+    <div class="hero-left">
+      <h2>Simple meal planning for healthier living</h2>
+      <p>Create meal plans, browse tasty recipes, and track your nutrition — all in one friendly place.</p>
+      <a class="btn" href="mealplanner.html">Get Started</a>
+    </div>
+    <div class="hero-right">
+      <img src="hero-plate.png" alt="Healthy meal" class="hero-img" />
+    </div>
   </section>
 
   <section class="features">
-    <article>
+    <article class="feature-card">
       <h3>Browse Recipes</h3>
-      <p>Search recipe ideas by dietary preference, calories, or time.</p>
+      <p>Find options by diet, calories, or cooking time.</p>
       <a href="recipes.html">View Recipes →</a>
     </article>
-    <article>
+    <article class="feature-card">
       <h3>Meal Planner</h3>
-      <p>Create weekly meal plans and save them locally.</p>
+      <p>Assemble a weekly plan and save it to your device.</p>
       <a href="mealplanner.html">Plan Meals →</a>
     </article>
-    <article>
+    <article class="feature-card">
       <h3>Quick BMI Tool</h3>
-      <p>Calculate your BMI and get general guidance.</p>
+      <p>Check your BMI and get helpful guidance.</p>
       <a href="bmi.html">Calculate BMI →</a>
     </article>
   </section>
