@@ -30,7 +30,7 @@ body{
   background:#ffffffcc;
   backdrop-filter:blur(10px);
   padding:16px 0;
-  position:fixed;   
+  position:absolute;   
   top:0;
   left:0;
   width:100%;
@@ -44,10 +44,10 @@ body{
 
 /* FIXED Logo Sizing */
 .logo{
-  width:68px;   /* smaller */
-  height:68px;
+  width:100px;   /* smaller */
+  height:100px;
   object-fit:contain;
-  border-radius:10px;
+  border-radius:6px;
   background:white;
   box-shadow:var(--shadow);
   padding:4px;
