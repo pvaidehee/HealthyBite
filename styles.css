@@ -23,7 +23,7 @@ body{
   padding-top: 95px;   /* matches header height so content does NOT slide under header */
 }
 
-.container{max-width:var(--maxw);margin:0 auto;padding:20px}
+.container{max-width:var(--maxw);margin:0 auto;padding:30px}
 
 /* HEADER */
 .site-header{
@@ -31,7 +31,7 @@ body{
   backdrop-filter:blur(10px);
   padding:16px 0;
   position:fixed;  
-  top:30;
+  top:0;
   left:0;
   width:100%;
   z-index:200;
