@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>HealthyBite — BMI Calculator</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="container"><h1 class="brand">HealthyBite</h1>
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="mealplanner.html">Meal Planner</a>
+  <a href="bmi.html">BMI Calculator</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<button class="nav-toggle" aria-label="Open navigation">☰</button>
+</div></header>
+
+<main class="container">
+  <h2>BMI Calculator</h2>
+  <p>Enter your height (cm) and weight (kg) to calculate BMI.</p>
+  <label>Height (cm): <input id="height" type="number" /></label>
+  <label>Weight (kg): <input id="weight" type="number" /></label>
+  <button id="calc">Calculate</button>
+  <div id="bmiResult" class="card"></div>
+</main>
+
+<footer class="site-footer"><div class="container"><small>© 2025 HealthyBite</small></div></footer>
+<script src="scripts.js"></script>
+<script>
+document.getElementById('calc').addEventListener('click', ()=>{
+  const h = parseFloat(document.getElementById('height').value);
+  const w = parseFloat(document.getElementById('weight').value);
+  if(!h || !w){ alert('Please enter height and weight.'); return; }
+  const bmi = (w / ((h/100)*(h/100))).toFixed(1);
+  let cat = '';
+  if(bmi < 18.5) cat = 'Underweight';
+  else if(bmi < 25) cat = 'Normal weight';
+  else if(bmi < 30) cat = 'Overweight';
+  else cat = 'Obese';
+  document.getElementById('bmiResult').innerHTML = `<h3>Your BMI: ${bmi}</h3><p>Category: ${cat}</p>`;
+});
+</script>
+</body>
+</html>
