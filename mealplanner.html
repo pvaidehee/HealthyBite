@@ -1,35 +1,45 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>HealthyBite — Meal Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header"><div class="container"><h1 class="brand">HealthyBite</h1>
-<nav class="main-nav">
-  <a href="index.html">Home</a>
-  <a href="recipes.html">Recipes</a>
-  <a href="mealplanner.html">Meal Planner</a>
-  <a href="bmi.html">BMI Calculator</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<button class="nav-toggle" aria-label="Open navigation">☰</button>
-</div></header>
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand-wrap">
+      <img src="greylogo.jpg" alt="HealthyBite logo" class="logo" />
+      <div><h1 class="brand">HealthyBite</h1><p class="tag">Weekly Planner</p></div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="mealplanner.html">Meal Planner</a>
+      <a href="bmi.html">BMI Calculator</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Open navigation">☰</button>
+  </div>
+</header>
 
 <main class="container">
   <h2>Meal Planner</h2>
   <p>Create a simple plan for the week and save it locally.</p>
-  <label>Day:
-    <select id="daySelect">
-      <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
-      <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
-    </select>
-  </label>
-  <input id="mealInput" placeholder="Enter meal (e.g., Grilled Chicken Salad)" />
-  <button id="addMeal">Add Meal</button>
-  <button id="savePlan">Save Plan</button>
+
+  <div class="planner-controls">
+    <label>Day:
+      <select id="daySelect">
+        <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+        <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
+      </select>
+    </label>
+    <input id="mealInput" placeholder="Enter meal (e.g., Grilled Chicken Salad)" />
+    <button id="addMeal" class="btn small">Add Meal</button>
+    <button id="savePlan" class="btn small outline">Save Plan</button>
+  </div>
 
   <h3>Weekly Plan</h3>
   <ul id="planList" class="plan-list"></ul>
