@@ -95,7 +95,7 @@ h2 {
   overflow:hidden;
 }
 
-.avatoast img{
+.avatoast-img{
   max-width:300px;
   border-radius:12px;
   box-shadow:var(--shadow);
