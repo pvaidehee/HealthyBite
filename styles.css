@@ -100,6 +100,73 @@ h2 {
   border-radius:12px;
   box-shadow:var(--shadow);
 }
+
+.chickenbowl-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.veggiewrap-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.blueoats-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.lemonbowl-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.greeksalad-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.veggietacos-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.glowsmoothie-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.veggiestirfry-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.lentinsoup-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.bananabread-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+.lemonsalmon-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
 .recipe-card h3{
   padding:12px;
   color:var(--text);
