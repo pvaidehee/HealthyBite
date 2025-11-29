@@ -97,7 +97,8 @@ h2 {
 }
 
 .avatoast-img{
-  max-width:50%;
+  width:200px;
+  height:200px;
   border-radius:12px;
   box-shadow:var(--shadow);
 }
@@ -127,7 +128,8 @@ p.veggiewrap-link{
 }
 
 .blueoats-img{
-  max-width:50%;
+    width:200px;
+  height:200px;
   border-radius:12px;
   box-shadow:var(--shadow);
 }
