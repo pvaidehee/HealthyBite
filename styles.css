@@ -117,11 +117,10 @@ h2 {
   max-width:300px;
   border-radius:12px;
   box-shadow:var(--shadow);
-  font-color: #4F86F7;
 }
 
-.blueoats-link{
-  padding:30px;
+p.blueoats-link{
+  padding: 15px;
   font-color: #4F86F7;
 }
 
