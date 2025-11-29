@@ -94,8 +94,11 @@ h2 {
   transition:transform 0.25s, box-shadow 0.25s;
   overflow:hidden;
 }
-.recipe-card img{
-  width:30%;height:150px;object-fit:cover;
+
+.avatoast img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
 }
 .recipe-card h3{
   padding:12px;
