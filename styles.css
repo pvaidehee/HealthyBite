@@ -216,9 +216,39 @@ p.lemonsalmon-link{
   padding: 15px;
 }
 
+.chickpea-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+p.chickpea-link{
+  padding: 15px;
+}
+
+.stuffedbell-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+p.stuffedbell-link{
+  padding: 15px;
+}
+
+.berryparfait-img{
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+p.berryparfait-link{
+  padding: 15px;
+}
+
 .recipe-card h3{
   padding:12px;
-  color:var(--text);
+  /* color:var(--text); */
   font-size:18px;
   font-weight:600;
   text-align:center;
