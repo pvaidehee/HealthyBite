@@ -97,8 +97,9 @@ h2 {
 
 .avatoast-img{
   max-width:300px;
-  border-radius:16px;
+  border-radius:12px;
   box-shadow:var(--shadow);
+  height: 30px;
 }
 
 .chickenbowl-img{
